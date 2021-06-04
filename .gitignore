@@ -1,0 +1,8 @@
+/logs
+/plugins
+/__pycache__
+/.pytest_cache
+/.vscode
+/dags/__pycache__
+/db/__pycache__
+/tests/__pycache__
