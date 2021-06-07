@@ -38,7 +38,7 @@ Environmental Sensor Telemetry Data Platform
   - Data ingestion and storage, Delivery this data to database.
   - Convert data to be available.
   - Visualize the data by comparison over time.
-  - Rest api of data stats.
+  - RESTful API of data stats.
 
 # Used Tools
 - [Apache Kafka](https://kafka.apache.org/documentation/)
@@ -52,7 +52,7 @@ Environmental Sensor Telemetry Data Platform
 - [Grafana](https://grafana.com/grafana/)
   - Visualization the data.
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
-  - For Rest Api.
+  - For RESTful API.
 - [Docker](https://www.docker.com/resources/what-container)
   - Setup all environment services.
 
@@ -85,7 +85,7 @@ Environmental Sensor Telemetry Data Platform
 
 ![pipeline3](assets/images/pipeline3.png)
 ## Batch Processing
-- This pipeline processes data statistics and graphs by Rest api requests.
+- This pipeline processes data statistics and graphs by RESTful API requests.
 
 ![pipeline5](assets/images/pipeline5.png)
 ## Visualizations
@@ -203,13 +203,13 @@ python producer.py
 
   ![grafana3](assets/images/grafana3.png)
 
-## Rest API
-### Strat rest api server
+## RESTful API
+### Strat RESTful API server
   - New terminal and run app.py
   ```bash
     python app.py
   ```
-  - You can use two simple in this project or create more rest api in app.py
+  - You can use two simple in this project or create more RESTful API in app.py
   - You also use postman for make a request and see the response from api.
   - It covers a period of time, by starting from the time of kafka start to produce until user request this api.
   - http://127.0.0.1:5000/temp-humidity-stats
@@ -226,7 +226,7 @@ python producer.py
 ### Ctrl+C for terminate running terminal.
 - consumer terminal
 - producer terminal
-- app(rest api) terminal
+- app(RESTful API) terminal
 ### Stop and remove volumns at all docker containers.
 ```bash
   docker-compose down
@@ -249,7 +249,7 @@ python producer.py
   - Store data in postgres by python3 or kafka connect(i don't use it to this project)
   - Use pgAdmin4 for monitoring and managing postgres db.  
   - Use Grafana to create simple visualization dashboard at near real time from postgres db.
-  - Create rest api by flask to serve analysis data.
+  - Create RESTful API by flask to serve analysis data.
 
 # Follow Me On
 
